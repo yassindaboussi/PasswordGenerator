@@ -6,6 +6,6 @@ Desktop application 💻 Creat Strong Password 🔒 Generator to create secure p
 ## Screenshots
 Main App           |
 :---------------------:|
-![Main App - screenshot](screenshots/Pass.gif) 
+![Main App - screenshot](screenshots/pass.gif) 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
