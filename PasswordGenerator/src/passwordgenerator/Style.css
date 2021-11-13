@@ -1,0 +1,57 @@
+* {
+    -fx-font-family: Tahoma;
+    -color-primary: #222831;
+    -color-secondary: #15C39A;
+    -color-primary-light: #393e46;
+}
+
+.root {
+    -fx-background-color: -color-primary
+}
+
+.title {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-weight : bold;
+}
+
+.box-title {
+    -fx-font-size: 17px;
+    -fx-text-fill: -color-secondary
+}
+
+.box-area {
+    -fx-font-size: 15px;
+    -fx-text-fill: #DDD;
+}
+
+.box-area .content {
+    -fx-background-color: -color-primary;
+}
+
+.btn {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 35px;
+    -fx-font-size: 16px;
+    -fx-background-color: #999;
+    -fx-text-fill: #FFF;
+    -jfx-button-type: RAISED;
+    -fx-cursor: hand
+}
+
+.btn-green{-fx-background-color: #15C39A;}
+.btn-red {-fx-background-color: #FF6160;}
+
+.text-inputt {
+    -fx-background-color: #DFDFDF;
+    -fx-background-radius: 3, 2;
+    -fx-cursor: text;
+    -fx-padding: 0.333333em 0.583em 0.333333em 0.583em; 
+    -fx-text-fill: green;
+}
+
+.StrengthPass {
+    -fx-text-fill: white;
+    -fx-highlight-fill: derive(-fx-control-inner-background,-20%);
+    -fx-highlight-text-fill: -fx-text-inner-color;
+}

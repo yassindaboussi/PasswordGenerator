@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="259.0" prefWidth="527.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="passwordgenerator.PassGeneratorController">
+   <children>
+      <HBox prefHeight="30.0" styleClass="Nice">
+         <children>
+            <HBox layoutX="0" prefHeight="30.0" HBox.hgrow="ALWAYS">
+               <padding>
+                  <Insets left="5" top="5" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="30.0" preserveRatio="true" smooth="true">
+                     <image>
+                        <Image url="@../img/padlock.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="25.0" prefWidth="224.0" styleClass="title" text=" Password Generator" />
+               </children>
+            </HBox>
+            <Label alignment="CENTER" onMouseClicked="#close" prefHeight="30.0" prefWidth="30.0" styleClass="title" text="X" />
+         </children>
+      </HBox>
+      <VBox prefHeight="526.0" prefWidth="793.0" spacing="10.0">
+         <children>
+            <Pane prefHeight="517.0" prefWidth="753.0">
+               <children>
+                  <JFXButton fx:id="btnReset" layoutX="354.0" layoutY="139.0" onAction="#onClickResetBtn" text="Reset">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-red" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton fx:id="btnGenerate" layoutX="110.0" layoutY="113.0" onAction="#onClickGenerate" text="Generate">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-green" />
+                     </styleClass>
+                  </JFXButton>
+                  <Label layoutX="14.0" layoutY="-16.0" prefHeight="21.0" prefWidth="58.0" styleClass="box-title" text="Output" textFill="#838383" />
+                  <TextArea fx:id="areaInputGen" layoutX="14.0" layoutY="13.0" prefHeight="50.0" prefWidth="291.0" promptText="Your Password is here.." styleClass="box-area" wrapText="true" />
+                  <JFXCheckBox fx:id="SymbolsBox" ellipsisString="" layoutX="335.0" layoutY="8.0" prefHeight="19.0" prefWidth="84.0" text="Symbols" textFill="WHITE" unCheckedColor="WHITE" />
+                  <JFXCheckBox fx:id="NumbersBox" ellipsisString="" layoutX="335.0" layoutY="40.0" prefHeight="19.0" prefWidth="84.0" text="Numbers" textFill="WHITE" unCheckedColor="WHITE" />
+                  <JFXCheckBox fx:id="UpperBox" ellipsisString="" layoutX="335.0" layoutY="73.0" prefHeight="19.0" prefWidth="84.0" text="Upper Case" textFill="WHITE" unCheckedColor="WHITE" />
+                  <JFXCheckBox fx:id="LowerBox" ellipsisString="" layoutX="335.0" layoutY="106.0" prefHeight="19.0" prefWidth="84.0" text="Lower Case" textFill="WHITE" unCheckedColor="WHITE" />
+                  <JFXTextField fx:id="SymbolsCount" layoutX="446.0" layoutY="3.0" prefHeight="29.0" prefWidth="37.0" styleClass="text-inputt" unFocusColor="#c7bbbb00" />
+                  <JFXTextField fx:id="NumbersCount" layoutX="446.0" layoutY="35.0" prefHeight="29.0" prefWidth="37.0" styleClass="text-inputt" unFocusColor="#c7bbbb00" />
+                  <JFXTextField fx:id="UpperCount" layoutX="446.0" layoutY="68.0" prefHeight="29.0" prefWidth="37.0" styleClass="text-inputt" unFocusColor="#c7bbbb00" />
+                  <JFXTextField fx:id="LowerCount" layoutX="446.0" layoutY="101.0" prefHeight="29.0" prefWidth="37.0" styleClass="text-inputt" unFocusColor="#c7bbbb00" />
+                  <TextField fx:id="StrengthPass" editable="false" layoutX="58.0" layoutY="63.0" prefHeight="29.0" prefWidth="204.0" styleClass="text-field" visible="false" />
+                  <TextField fx:id="TextStrengthPass" editable="false" layoutX="58.0" layoutY="72.0" prefHeight="29.0" prefWidth="204.0" style="-fx-background-radius: 25px;" styleClass="StrengthPass" visible="false" />
+               </children>
+            </Pane>
+         </children>
+         <VBox.margin>
+            <Insets top="10" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>
