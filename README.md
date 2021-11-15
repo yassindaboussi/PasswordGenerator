@@ -1,7 +1,7 @@
 <div id="top"></div>
 <h1 align="center"> PasswordGenerator </h1>
 
-Desktop application 💻 Creat Strong Password 🔒 Generator to create secure passwords 🛡️.<br />
+Desktop application 💻 create a Strong Password 🔒 Generator to create secure passwords 🛡️.<br />
 
 ## Screenshots
 Main App           |
